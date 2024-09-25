@@ -40,7 +40,7 @@ class TicTacToe:
         player = 'X' if self.get_random_first_player() == 1 else 'O'
         while True:
             print(f"Player {player}'s turn")
-            self.show_board()
+            self.display_board()
 
             # Get user input
             # TODO: try - except enter two numbers between 1 and 3

@@ -47,12 +47,12 @@ class TestTicTacToe(unittest.TestCase):
         # False for “O” and vice versa.
 
 
-    def test_show_board(self):
-        """ Test the show_board output """
+    def test_display_board(self):
+        """ Test the display_board output """
         expected_output = "- - -\n- - -\n- - -\n\n"
         captured_output = StringIO()
         sys.stdout = captured_output
-        self.game.show_board()
+        self.game.display_board()
         sys.stdout = sys.__stdout__
         self.assertEqual(captured_output.getvalue(), expected_output)
 
