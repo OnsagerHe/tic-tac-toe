@@ -1,5 +1,6 @@
 import random
 
+# Documentation class: https://docs.python.org/3/tutorial/classes.html
 class TicTacToe:
     def __init__(self):
         self.board = []
@@ -44,6 +45,7 @@ class TicTacToe:
 
             # Get user input
             # TODO: try - except enter two numbers between 1 and 3
+            # Documentation: https://docs.python.org/3/tutorial/errors.html#handling-exceptions
             row, col = map(int, input("Enter row and column numbers to fix spot (1-3): ").split())
             # TODO: Check if spot are already taken
             
